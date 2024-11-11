@@ -12,7 +12,7 @@ public class MovieManager {
     private IMovieDataAccess movieDAO;
 
     public MovieManager() {
-        movieDAO = new MovieDAO_Mock();
+        movieDAO = new MovieDAO_File();
     }
 
     public List<Movie> getAllMovies() throws Exception {

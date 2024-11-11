@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="333.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.mrs.GUI.Controller.MovieViewController">
+<AnchorPane prefHeight="333.0" prefWidth="340.0" style="-fx-background-image: url('images/70s-flowers.jpg'); " xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dk.easv.mrs.GUI.Controller.MovieViewController">
    <children>
-      <ListView fx:id="lstMovies" layoutY="54.0" prefHeight="156.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="54.0" />
-      <TextField fx:id="txtMovieSearch" layoutX="10.0" layoutY="14.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <ListView fx:id="lstMovies" editable="true" layoutY="54.0" prefHeight="156.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="54.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></ListView>
+      <TextField fx:id="txtMovieSearch" layoutX="10.0" layoutY="14.0" promptText="search" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="12.0" />
+         </font></TextField>
    </children>
 </AnchorPane>
